@@ -1,0 +1,11 @@
+const puppeteer=require("puppeteer");
+
+let mail="wotara8138@3dinews.com";
+let password="123456";
+const code=require("./code");
+
+(async function(){
+    let browser= await puppeteer.launch({headless:false,defaultViewport:null  });
+    let page=await browser.newPage();
+    await page.goto("https://www.hackerrank.com/");
+})    
